@@ -1,0 +1,18 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.navbar {
+    background-color: $primaryLight;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    // opacity: 0;
+    width: 100%;
+    .navbar-brand,
+    .nav-link {
+        cursor: pointer;
+        color: $primaryLight;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+}

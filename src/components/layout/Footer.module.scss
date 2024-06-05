@@ -1,0 +1,11 @@
+@use "@/styles/scss/abstracts/" as *;
+
+.footer {
+    background-color: $complementaryColor;
+    color: $primaryLight;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    // opacity: 0;
+    width: 100%;
+}

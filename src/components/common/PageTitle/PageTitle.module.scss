@@ -1,0 +1,12 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.pageTitle {
+    margin: 2rem 0;
+    border-bottom: 1px solid $dividerColor;
+    h1 {
+        color: $complementaryColor;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+}
