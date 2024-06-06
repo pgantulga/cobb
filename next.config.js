@@ -10,7 +10,6 @@ module.exports = (phase) => {
 
   const reactStrictMode = true;
 
-  
 
   const env = {
     SERVER_NAME: (() => {

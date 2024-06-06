@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from './Navbar.module.scss';
 import Image from 'next/image';
 import Button from '../common/Button/Button';
+import ButtonLink from '../common/ButtonLink/ButtonLink';
 const Navbar = () => {
     return (
         <nav className={styles.navbar}>
@@ -29,8 +30,11 @@ const Navbar = () => {
                     <Link href="/contact">
                         <span className=" hover:text-gray-700">Contact</span>
                     </Link>
-                    <Button
-                    >Book</Button>
+                    <ButtonLink path="/">Book</ButtonLink>
+
+                    {/* <Button
+                       
+                    >Book</Button> */}
                 </div>
             </div>
         </nav>
