@@ -13,7 +13,7 @@ const Navbar = () => {
                             alt='Cobb logo'
                             width={150}
                             height={100}
-                            />
+                        />
                     </Link>
                 </div>
                 <div className="space-x-4">
@@ -23,13 +23,14 @@ const Navbar = () => {
                     <Link href="/about">
                         <span className=" hover:text-gray-700">About</span>
                     </Link>
-                    <Link href="/news">
-                        <span className=" hover:text-gray-700">News</span>
+                    <Link href="/Jobs">
+                        <span className=" hover:text-gray-700">Jobs</span>
                     </Link>
                     <Link href="/contact">
-                        <span className="hover:text-gray-700">Contact</span>
+                        <span className=" hover:text-gray-700">Contact</span>
                     </Link>
-                    <Button>Book</Button>
+                    <Button
+                    >Book</Button>
                 </div>
             </div>
         </nav>

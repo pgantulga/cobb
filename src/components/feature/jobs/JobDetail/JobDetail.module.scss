@@ -1,0 +1,20 @@
+@use "@/styles/scss/abstracts/" as *;
+
+.detailImage {
+    color: $primaryLight;
+    background: no-repeat center/cover;
+    height: 50vh;
+    border-radius: 16px;
+    // .overlay {
+    //     background-color: rgba(0, 0, 0, 0.5);
+    //     border-radius: 16px;
+    //     height: 50vh;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: start;
+    //     justify-content: end;
+    //     padding: 2cm 5rem;
+
+    // }
+   
+}
