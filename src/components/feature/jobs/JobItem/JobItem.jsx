@@ -19,6 +19,7 @@ function JobItem(props) {
                     src={props.imageUrl}
                     layout="fill"
                     objectFit="cover"
+                    alt = {props.name}
                 />
             </div>
             <div className="flex-col content-between px-6 py-4 flex-col h-full">

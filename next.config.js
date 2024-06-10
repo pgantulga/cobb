@@ -16,7 +16,6 @@ module.exports = (phase) => {
       if (isDev) return 'http://localhost:3000/'
       if (isProd) return 'https://cobbconstruct-pgantulgas-projects.vercel.app/'
     })(),
-    // NEWS_API_KEY: process.env.NEWS_API_KEY,
   }
 
   return {

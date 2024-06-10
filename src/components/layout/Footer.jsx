@@ -12,8 +12,8 @@ function Footer() {
                     <Link href="/about">
                         <span className=" hover:text-gray-300">About</span>
                     </Link>
-                    <Link href="/news">
-                        <span className=" hover:text-gray-300">News</span>
+                    <Link href="/jobs">
+                        <span className=" hover:text-gray-300">Jobs</span>
                     </Link>
                     <Link href="/privacy">
                         <span className=" hover:text-gray-300">Privacy policy</span>

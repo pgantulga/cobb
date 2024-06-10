@@ -32,9 +32,7 @@ const Navbar = () => {
                     </Link>
                     <ButtonLink external={true} path="https://docs.google.com/forms/d/e/1FAIpQLSeXS4qTkeXRTH1JrwE4G-XkcBZkATEpA5h2_unBoM-VKsCJOA/viewform?usp=sharing">Book</ButtonLink>
 
-                    {/* <Button
-                       
-                    >Book</Button> */}
+                  
                 </div>
             </div>
         </nav>
