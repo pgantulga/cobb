@@ -22,24 +22,24 @@ const HomePage = (props) => {
       <SectionTitle
         title="Latest jobs"
       />
-      {/* {jobs.length > 0 &&
+      {jobs.length > 0 &&
         <JobsList
           jobs={jobs}
         />
-      } */}
+      }
 
     </>
   )
 }
 
-// export const getStaticProps = async () => {
-//   const response = await fetch(`${process.env.SERVER_NAME}/api/jobs`);
-//   const data = await response.json();
-//   return {
-//     props: {
-//       jobs: data
-//     },
-//     revalidate: 60 * 60
-//   };
-// };
+export const getStaticProps = async () => {
+  const response = await fetch(`${process.env.SERVER_NAME}/api/jobs`);
+  const data = await response.json();
+  return {
+    props: {
+      jobs: data
+    },
+    revalidate: 60 * 60
+  };
+};
 export default HomePage
