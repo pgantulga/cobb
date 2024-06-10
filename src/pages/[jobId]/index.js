@@ -2,68 +2,59 @@ import JobDetail from '@/components/feature/jobs/JobDetail/JobDetail';
 import Head from 'next/head';
 
 function JobDetailPage(props) {
-    const { job } = props;
+    // const { job } = props;
 
     return (
         <>
             <Head>
-                <title>{`Cobb | ${job.name}`}</title>
+                {/* <title>{`Cobb | ${job.name}`}</title> */}
                 <meta
                     name='description'
-                    description={job.description}
+                    // description={job.description}
                 />
             </Head>
-            <JobDetail
+            {/* <JobDetail
                 imageUrl={job.imageUrl}
                 name={job.name}
                 description={job.description}
                 location={job.location}
-            />
+            /> */}
         </>
     );
 }
 
-// STATIC SITE DYNAMIC PATHS (snippet: "ngspa")
-export const getStaticPaths = async () => {
-    // (a) Fetches ENTIRE articles array from INTERNAL API
+// export const getStaticPaths = async () => {
 
-    const response = await fetch(`${process.env.SERVER_NAME}/api/jobs`);
-    const jobs = await response.json();
+//     const response = await fetch(`${process.env.SERVER_NAME}/api/jobs`);
+//     const jobs = await response.json();
 
-    // (b) Pull ALL the ids out of the articles array ONLY
-    const idList = jobs.map((job) => job.id);
+//     const idList = jobs.map((job) => job.id);
 
-    // (c) Pre-build ALL the URL paths for all existing ids in array 
-    const paths = idList.map((id) => (
-        { params: { jobId: id.toString() } }
-    ));
-    // NOTE: The id MUST be converted to a string, as URLs need strings NOT numbers!
+//     const paths = idList.map((id) => (
+//         { params: { jobId: id.toString() } }
+//     ));
 
-    return {
-        paths,
-        fallback: false
-    }
-}
+//     return {
+//         paths,
+//         fallback: false
+//     }
+// }
 
-// STATIC SITE GENERATION (snippet: "ngsp")
-export const getStaticProps = async (context) => {
-    // (a) Fetches ENTIRE articles array from INTERNAL API
-    const response = await fetch(`${process.env.SERVER_NAME}/api/jobs`);
-    const jobs = await response.json();
+// export const getStaticProps = async (context) => {
+//     const response = await fetch(`${process.env.SERVER_NAME}/api/jobs`);
+//     const jobs = await response.json();
 
-    // (b) Store params id value (article USER wants!)
-    const jobQuery = context.params.jobId;
+//     const jobQuery = context.params.jobId;
 
-    // (c) Filters articles array to match & return article passed in params
-    const jobMatch = jobs.filter(
-        (job) => job.id.toString() === jobQuery
-    )
+//     const jobMatch = jobs.filter(
+//         (job) => job.id.toString() === jobQuery
+//     )
 
-    return {
-        props: {
-            job: jobMatch[0]
-        },
-    };
-};
+//     return {
+//         props: {
+//             job: jobMatch[0]
+//         },
+//     };
+// };
 
 export default JobDetailPage;
