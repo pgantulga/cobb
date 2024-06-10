@@ -4,21 +4,23 @@ import Link from 'next/link';
 function ButtonLink({ path, target, children, external = false }) {
     if (external) {
         return (
-            <a
-                href={href}
+            <Link
+                href={path}
                 target="_blank"
+                className={styles.buttonLink}
+
                 rel="noopener noreferrer"
-                className="text-red-500 hover:text-red-700 font-bold py-2 px-4 rounded transition duration-300"
+                // className="text-red-500 hover:text-red-700 font-bold py-2 px-4 rounded transition duration-300"
             >
                 {children}
-            </a>
+            </Link>
         );
     }
 
     return (
         <Link
             href={path}
-            className={styles.buttonLink}
+            className={styles.buttonLinkInternal}
             target={target ? "_blank" : "_self"}
         >
             {children}

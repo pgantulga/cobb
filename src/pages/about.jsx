@@ -13,7 +13,15 @@ const AboutPage = () => {
             <PageTitle
                 title='About us'
             />
-            <p>dsaf</p>
+            <section className="my-4">
+
+                <h2>Introduction</h2>
+                <p className="my-2">
+                    Welcome to Cobb Construction Engineering Pty website. We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you visit our website.
+                </p>
+
+
+            </section>
 
         </>
 

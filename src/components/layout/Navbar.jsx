@@ -19,18 +19,18 @@ const Navbar = () => {
                 </div>
                 <div className="space-x-4">
                     <Link href="/">
-                        <span className="hover:text-gray-700">Home</span>
+                        <span className="hover:text-primary">Home</span>
                     </Link>
                     <Link href="/about">
-                        <span className=" hover:text-gray-700">About</span>
+                        <span className=" hover:text-primary">About</span>
                     </Link>
-                    <Link href="/Jobs">
-                        <span className=" hover:text-gray-700">Jobs</span>
+                    <Link href="/jobs">
+                        <span className=" hover:text-primary">Jobs</span>
                     </Link>
                     <Link href="/contact">
-                        <span className=" hover:text-gray-700">Contact</span>
+                        <span className=" hover:text-primary">Contact</span>
                     </Link>
-                    <ButtonLink path="/">Book</ButtonLink>
+                    <ButtonLink external={true} path="https://docs.google.com/forms/d/e/1FAIpQLSeXS4qTkeXRTH1JrwE4G-XkcBZkATEpA5h2_unBoM-VKsCJOA/viewform?usp=sharing">Book</ButtonLink>
 
                     {/* <Button
                        

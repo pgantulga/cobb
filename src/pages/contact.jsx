@@ -13,7 +13,9 @@ const ContactPage = () => {
             <PageTitle
                 title='Contact us'
             />
-            <p>dsaf</p>
+            <h2 className="my-2">Contact information:</h2>
+            <p><span className="font-bold">Tel:</span> 04-76xxxxxxx</p>
+            
 
         </>
 

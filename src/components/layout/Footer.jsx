@@ -15,6 +15,10 @@ function Footer() {
                     <Link href="/news">
                         <span className=" hover:text-gray-300">News</span>
                     </Link>
+                    <Link href="/privacy">
+                        <span className=" hover:text-gray-300">Privacy policy</span>
+                    </Link>
+                
                     <Link href="/contact">
                         <span className="hover:text-gray-300">Contact</span>
                     </Link>

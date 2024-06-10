@@ -12,7 +12,23 @@
   text-decoration: none;
 
   &:hover, &:active {
-    // background-color: $brandColor;
-    color: $complementaryColor;
+    background-color: red;
+    color: $primaryLight;
   }
 }
+
+.buttonLinkInternal {
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    font: inherit;
+    cursor: pointer;
+    color: $primaryColor;
+  //   border: 1px solid $primaryColor;
+    border-radius: 4px;
+    text-decoration: none;
+  
+    &:hover, &:active {
+      background-color: $highlightColor;
+      color: $primaryLight;
+    }
+  }

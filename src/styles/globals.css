@@ -18,3 +18,12 @@ a {
 * {
   box-sizing: border-box;
 }
+h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  span {
+    font-weight: 700;
+  }
+}

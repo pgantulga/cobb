@@ -15,7 +15,7 @@ function JobDetail(props) {
             <div className='px-4 my-4'>
                 <p>{props.description}</p>
             </div>
-                <ButtonLink path="/">Back to Home</ButtonLink>
+            <ButtonLink path="/">Back to Home</ButtonLink>
         </>
 
     )
