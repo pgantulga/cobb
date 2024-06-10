@@ -16,6 +16,7 @@ module.exports = (phase) => {
       if (isDev) return 'http://localhost:3000/'
       if (isProd) return 'https://cobbconstruct-pgantulgas-projects.vercel.app/'
     })(),
+    NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID
   }
 
   return {
